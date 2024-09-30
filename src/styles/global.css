@@ -59,16 +59,16 @@
   justify-content: center; /* Center the circles horizontally */
   align-items: center; /* Center the circles vertically */
   flex-wrap: wrap; /* Allow wrapping if needed */
-  margin-bottom: 20px; /* Add margin below the circle container */
+  margin-bottom: 75px; /* Add margin below the circle container */
 }
 
 .circle {
   display: flex;
   justify-content: center; /* Center the image within the circle */
   align-items: center; /* Center the image within the circle */
-  width: 300px; /* Circle diameter */
-  height: 300px; /* Circle diameter */
-  border-radius: 50%; /* Make it circular */
+  width: 350px; /* Circle diameter */
+  height: 350px; /* Circle diameter */
+  border-radius: 40%; /* Make it circular */
   overflow: hidden; /* Ensure the image doesn't overflow */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
