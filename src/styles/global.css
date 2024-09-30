@@ -50,7 +50,7 @@
   align-items: center; /* Center align the contents */
 }
 
-/* Circles */
+/* Circle */
 .circle-container {
   position: relative; /* Keep positioning for the circles */
   width: 100%; /* Full width */
@@ -123,4 +123,28 @@
 
 .quote-container::after {
   margin-top: 20px; /* Space between the quote and line */
+}
+
+/* Other */
+.image-wrapper {
+  display: flex; /* Use flexbox to arrange images */
+  flex-direction: column; /* Arrange images in a row */
+  align-items: center; /* Center images vertically */
+  justify-content: space-evenly; /* Space images evenly */
+  margin-bottom: 20px; /* Add margin below the image wrapper */
+}
+
+.small-image {
+  width: 300px; /* Set a smaller width for mobile */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Optional: Increase size for larger screens */
+@media (min-width: 768px) {
+  .small-image {
+    width: 550px; /* Set a larger width for medium and up */
+  }
+  .image-wrapper {
+    flex-direction: row; /* Arrange images in a row */
+  }
 }
