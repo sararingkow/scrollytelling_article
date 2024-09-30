@@ -1,15 +1,65 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
-import thumbsup from "../assets/images/thumbsup.png";
 ---
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+
+<MainLayout title="Oasis & britpoppens historie">
+  <div class="top-container text-center flex flex-col justify-center">
+    <img src="../images/lines.svg" class="side-line left-line" alt="Left Line" />
+    <h1 class="text-6xl pb-12 z-10">
+      “I don't live to work; <br />
+      I work to live.”
+    </h1>
+    <h2 class="h2-name text-3xl z-10">– Noel Gallagher, Oasis</h2>
+    <img src="../images/lines.svg" class="side-line right-line" alt="Right Line" />
+  </div>
+  <div class="main-container mx-16 pt-12">
+    <div class="text-center">
+      <h2 class="text-4xl tracking-widest">Britpoppens historie</h2>
+    </div>
+    <div class="flex justify-center">
+      <p class="pt-12 pb-12 max-w-5xl leading-8">
+        Britpop var en musikalsk bevægelse, der opstod i Storbritannien i begyndelsen af 1990'erne og blev en dominerende del af den britiske
+        populærkultur i det årti. Den markerede en tilbagevenden til britiske musiktraditioner, som en reaktion mod den amerikansk-dominerede
+        grunge-scene. Britpop-bands som Blur, Oasis, Pulp og Suede fejrede britisk kultur og hverdag ved at integrere elementer fra tidligere britiske
+        bands som The Beatles, The Kinks og The Smiths i deres musik. <br /><br />
+          Bevægelsen var tæt forbundet med den bredere "Cool Britannia"-bølge, der fejrede moderne britisk identitet inden for mode, kunst og film. Musikalsk
+        var britpop karakteriseret ved sin melodiøse og guitardrevne lyd, ofte kombineret med tekster, der omhandlede britisk livsstil og sociale klasser.
+        <br /><br />
+          Et centralt element i britpoppen var den intense rivalisering mellem Blur og Oasis, som blev kendt som "The Battle of Britpop", og som skabte
+        enorm mediedækning. Selvom britpoppen begyndte at falme i slutningen af 1990'erne, har dens indflydelse været langvarig, og den har efterladt et
+        varigt aftryk på britisk musikhistorie.
+      </p>
+    </div>
+    <div class="circle-container p-12">
+      <div class="circle">
+        <img src="../images/poster.webp" class="circle-image" alt="Image 3" />
+      </div>
+    </div>
+  </div>
+  <div class="quote-container p-12">
+    <div class="quote-content">
+      <h2 class="quote-text">“Everyone knows that if you've got a brother, you're going to fight”</h2>
+      <h2 class="quote-author">– Liam Gallagher, Oasis</h2>
+    </div>
+  </div>
+  <div class="main-container2 mx-16 pt-12">
+    <div class="text-center">
+      <h2 class="text-4xl tracking-widest">Oasis og rejsen til deres gendannelse</h2>
+    </div>
+    <div class="flex justify-center">
+      <p class="pt-12 pb-12 max-w-5xl leading-8">
+        Oasis' gendannelse markerede et stort øjeblik for både bandet og deres dedikerede fans. Efter mange års rivalisering og solokarrierer fandt
+        brødrene Noel og Liam Gallagher endelig sammen igen, hvilket førte til en længe ventet genforening. Efter rygter og spekulationer i årevis
+        blev gendannelsen officielt annonceret, og bandet blev hurtigt hyldet for at bringe deres ikoniske britpop-lyd tilbage. Udover at genoplive
+        klassikere som "Wonderwall" og "Live Forever", gav de også nyt liv til dybere numre som "Slide Away", alt imens deres energiske liveoptrædener
+        cementerede deres position som britisk rockens giganter. <br />
+        <br />
+
+        Efter gendannelsen har Oasis fortsat med at udgive ny musik, der formår at kombinere deres klassiske lyd med moderne elementer. Deres
+        comeback-turné blev en kæmpe succes, og både gamle og nye fans har strømmet til for at høre bandets nye materiale samt deres tidløse hits.
+        Selvom både Noel og Liam stadig er aktive med soloprojekter, er Oasis nu igen deres hovedfokus, og bandet arbejder målrettet mod en fremtid,
+        hvor de forbliver relevante på den globale musikscene.
+      </p>
+    </div>
+  </div>
 </MainLayout>

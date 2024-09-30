@@ -1,0 +1,126 @@
+/* Top part */
+.top-container {
+  position: relative;
+  background-image: url("../images/britain1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+.side-line {
+  width: 150px; /* Increase the size of the images */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute; /* Position it relative to the container */
+  z-index: 10; /* Ensure it's above the background and text */
+}
+
+.left-line {
+  left: 150px; /* Adjust spacing from the left */
+}
+
+.right-line {
+  right: 150px; /* Adjust spacing from the right */
+  transform: scaleX(-1); /* Flip the right image horizontally */
+}
+
+.top-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust the darkness */
+  z-index: 1; /* Ensure it sits behind the text */
+}
+
+.top-container h1,
+.top-container h2 {
+  position: relative;
+  z-index: 2; /* Keep the text above the darkened background */
+}
+.main-container {
+  display: flex; /* Use flexbox for main layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center align the contents */
+}
+
+/* Circles */
+.circle-container {
+  position: relative; /* Keep positioning for the circles */
+  width: 100%; /* Full width */
+  height: 400px; /* Set a height for the container */
+  display: flex; /* Use flexbox to arrange the circles */
+  justify-content: center; /* Center the circles horizontally */
+  align-items: center; /* Center the circles vertically */
+  flex-wrap: wrap; /* Allow wrapping if needed */
+  margin-bottom: 20px; /* Add margin below the circle container */
+}
+
+.circle {
+  display: flex;
+  justify-content: center; /* Center the image within the circle */
+  align-items: center; /* Center the image within the circle */
+  width: 300px; /* Circle diameter */
+  height: 300px; /* Circle diameter */
+  border-radius: 50%; /* Make it circular */
+  overflow: hidden; /* Ensure the image doesn't overflow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.circle-image {
+  width: 100%; /* Make image fill the circle */
+  height: 100%; /* Make image fill the circle */
+  object-fit: cover; /* Maintain aspect ratio and cover */
+}
+
+/* Quote */
+.quote-container {
+  background-color: white; /* Background color for the quote */
+  padding: 20px; /* Padding around the content */
+  border: 2px solid black; /* Border style */
+  position: relative; /* Positioning context for pseudo-elements */
+  text-align: center; /* Center the text */
+  max-width: 600px; /* Max width for the quote box */
+  margin: 0 auto; /* Center horizontally */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  z-index: 1; /* Ensure it's on top of circles */
+}
+
+.quote-content {
+  position: relative; /* Positioning context for the pseudo-elements */
+}
+
+.quote-text {
+  font-size: 2em; /* Font size for the quote */
+  margin: 10px 0; /* Margin around quote text */
+}
+
+.quote-author {
+  font-size: 1.2em; /* Font size for the author */
+  font-weight: normal; /* Normal weight for the author */
+}
+
+/* Optional: Add decorative lines above and below the quote */
+.quote-container::before,
+.quote-container::after {
+  content: ""; /* Empty content for pseudo-elements */
+  display: block; /* Block display */
+  width: 50px; /* Width of the lines */
+  height: 2px; /* Height of the lines */
+  background-color: black; /* Color of the lines */
+  margin: 10px auto; /* Center the lines */
+}
+
+.quote-container::before {
+  margin-bottom: 20px; /* Space between the line and quote */
+}
+
+.quote-container::after {
+  margin-top: 20px; /* Space between the quote and line */
+}
