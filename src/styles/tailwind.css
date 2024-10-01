@@ -16,14 +16,7 @@
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   }
 
-  h1 {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-  }
-
   .h2-name {
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: white;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   }
 }

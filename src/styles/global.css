@@ -5,52 +5,22 @@ body {
 }
 
 /* Top part */
-.top-container {
-  position: relative;
-  background-image: url("../images/britpop.webp");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 65vh;
-  width: 100%;
-  display: flex;
-  align-items: center; /* Center items vertically */
-  justify-content: center; /* Center items horizontally */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Add shadow */
-}
-
 .side-line {
-  width: 150px; /* Increase the size of the images */
+  width: 100px; /* Increase the size of the images */
   height: auto; /* Maintain aspect ratio */
   position: absolute; /* Position it relative to the container */
   z-index: 10; /* Ensure it's above the background and text */
 }
 
 .left-line {
-  left: 150px; /* Adjust spacing from the left */
+  left: 300px; /* Adjust spacing from the left */
 }
 
 .right-line {
-  right: 150px; /* Adjust spacing from the right */
+  right: 300px; /* Adjust spacing from the right */
   transform: scaleX(-1); /* Flip the right image horizontally */
 }
 
-.top-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Adjust the darkness */
-  z-index: 1; /* Ensure it sits behind the text */
-}
-
-.top-container h1,
-.top-container h2 {
-  position: relative;
-  z-index: 2; /* Keep the text above the darkened background */
-}
 .main-container {
   display: flex; /* Use flexbox for main layout */
   flex-direction: column; /* Stack children vertically */
