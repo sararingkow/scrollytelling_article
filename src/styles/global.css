@@ -1,15 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
 /* Top part */
 .top-container {
   position: relative;
-  background-image: url("../images/britain1.jpg");
+  background-image: url("../images/britpop.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 50vh;
+  height: 65vh;
   width: 100%;
   display: flex;
   align-items: center; /* Center items vertically */
   justify-content: center; /* Center items horizontally */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Add shadow */
 }
 
 .side-line {
@@ -35,7 +42,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Adjust the darkness */
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the darkness */
   z-index: 1; /* Ensure it sits behind the text */
 }
 
@@ -59,24 +66,20 @@
   justify-content: center; /* Center the circles horizontally */
   align-items: center; /* Center the circles vertically */
   flex-wrap: wrap; /* Allow wrapping if needed */
-  margin-bottom: 75px; /* Add margin below the circle container */
+  margin-bottom: 100px;
 }
 
 .circle {
   display: flex;
   justify-content: center; /* Center the image within the circle */
   align-items: center; /* Center the image within the circle */
-  width: 350px; /* Circle diameter */
-  height: 350px; /* Circle diameter */
-  border-radius: 40%; /* Make it circular */
-  overflow: hidden; /* Ensure the image doesn't overflow */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
 
 .circle-image {
-  width: 100%; /* Make image fill the circle */
-  height: 100%; /* Make image fill the circle */
-  object-fit: cover; /* Maintain aspect ratio and cover */
+  width: 300px; /* Make image fill the circle */
+  height: 300px; /* Make image fill the circle */
+  border-top-left-radius: 50%; /* Add rounded corners */
+  border-top-right-radius: 50%; /* Add rounded corners */
 }
 
 /* Quote */
@@ -137,6 +140,7 @@
 .small-image {
   width: 300px; /* Set a smaller width for mobile */
   height: auto; /* Maintain aspect ratio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
 /* Optional: Increase size for larger screens */
